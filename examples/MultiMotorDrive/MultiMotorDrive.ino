@@ -21,9 +21,13 @@ MotorDrive motor; //This object is used to control TWO motors
 void setup() {
   Serial.begin(9600);      //open the serial port for communication
   
-  motor.leftMotor(7,8);   //assign the pins used to control the LEFT motor
+  motor.leftMotor(7,8,9,255);   //assign the pins used to control the LEFT motor
+                                //the parameters are in order:[controlPin1,controlPin2,enablePin,speed(0 to 255)]
+                                //leave speed parameter blank or set it to 255 for full speed.
+                                //you can contol the speed dynamically using "setSpeed() function" 
+                                //(see "MultiMotorSpeedControl" in examples)
  
-  motor.rightMotor(14,16);//assign the pins used to control the RIGHT motor
+  motor.rightMotor(14,16,10,255);//assign the pins used to control the RIGHT motor
 }
 
 void loop() {

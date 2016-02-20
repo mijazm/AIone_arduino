@@ -16,8 +16,8 @@ class MotorDrive{
 
 public:
 
-   void leftMotor(int left_0,int left_1,int enable_pin,int speed=255);
-   void rightMotor(int right_0,int right_1,int enable_pin,int speed=255);
+   void leftMotor(int left_0,int left_1,int enable_pin,int speed);
+   void rightMotor(int right_0,int right_1,int enable_pin,int speed);
    void driveForward();
    void driveBackward();
    void turnLeft();
@@ -35,7 +35,7 @@ class SingleMotorDrive{
 
 public:
 
-   SingleMotorDrive(int left_0,int left_1,int enable_pin,int speed=255);
+   SingleMotorDrive(int left_0,int left_1,int enable_pin,int speed);
    void driveForward();
    void driveBackward();
    void stopMotor();

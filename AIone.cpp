@@ -1,3 +1,9 @@
+/* AIone.cpp - Library for AIone robot
+ * Author:Mijaz Mukundan(mijazm.app@gmail.com)
+ * Licence: MIT licence,A copy is provided in the library root folder
+ * DATE:Saturday 20 February 2016
+ */
+
 #include "Arduino.h"
 #include "AIone.h"
 

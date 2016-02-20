@@ -6,7 +6,7 @@
  */
 
 //constructor for initalizing
-SingleMotorDrive::SingleMotorDrive(int motor_0,int motor_1,int enable_pin,int speed)
+SingleMotorDrive::SingleMotorDrive(int motor_0,int motor_1,int enable_pin,int speed=255)
 {
    pinMode(motor_0,OUTPUT);
    pinMode(motor_1,OUTPUT);
@@ -60,7 +60,7 @@ void SingleMotorDrive::setSpeed(int speed)
  */
 
 //for initializing pin for left motor
-void MotorDrive::leftMotor(int left_0,int left_1,int enable_pin,int speed)
+void MotorDrive::leftMotor(int left_0,int left_1,int enable_pin,int speed=255)
 {
   pinMode(left_0,OUTPUT);
   pinMode(left_1,OUTPUT);
